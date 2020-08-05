@@ -1,5 +1,5 @@
 const poll = {
-  path: '/wansoo',
+  path: '/pollapp',
   component: () => import('@/components/common/DefaultLayout.vue'),
   children: [
     {
@@ -7,7 +7,7 @@ const poll = {
       name: 'PollListPage',
       component: () => import('@/views/PollListPage.vue'),
       meta: {
-        routes: [{ breadcrumbName: 'Home' }],
+        routes: [{ breadcrumbName: '투표 목록' }],
       },
     },
     {
@@ -16,8 +16,19 @@ const poll = {
       component: () => import('@/views/PollDetailPage.vue'),
       meta: {
         routes: [
-          { breadcrumbName: 'Home', to: { name: 'PollListPage' } },
+          { breadcrumbName: '투표 목록', to: { name: 'PollListPage' } },
           { breadcrumbName: '투표 상세' },
+        ],
+      },
+    },
+    {
+      path: 'create',
+      name: 'PollCreatePage',
+      component: () => import('@/views/PollCreatePage.vue'),
+      meta: {
+        routes: [
+          { breadcrumbName: '투표 목록', to: { name: 'PollListPage' } },
+          { breadcrumbName: '투표 생성' },
         ],
       },
     },

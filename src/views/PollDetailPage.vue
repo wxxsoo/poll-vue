@@ -1,11 +1,28 @@
 <template>
   <div>
-    poll detail page
+    <a-row>
+      <a-col>
+        <poll-info></poll-info>
+      </a-col>
+    </a-row>
   </div>
 </template>
 
 <script>
-export default {};
+import PollInfo from '@/components/PollInfo';
+export default {
+  created() {
+    this.$store.dispatch('FETCH_POLL', this.$route.params.id);
+  },
+  components: {
+    PollInfo,
+  },
+  computed: {
+    poll() {
+      return this.$store.getters.poll;
+    },
+  },
+};
 </script>
 
 <style></style>

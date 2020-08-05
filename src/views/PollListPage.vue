@@ -1,9 +1,17 @@
 <template>
-  <div>poll list page</div>
+  <div>
+    <poll-card-list></poll-card-list>
+  </div>
 </template>
 
 <script>
-export default {};
+// import { fetchPolls } from '@/api/poll';
+import PollCardList from '@/components/PollCardList';
+export default {
+  components: {
+    PollCardList,
+  },
+};
 </script>
 
 <style></style>

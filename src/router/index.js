@@ -1,20 +1,22 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Home from '../views/Home.vue';
+// import Home from '../views/Home.vue';
 import poll from './modules/poll';
+import vote from './modules/vote';
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: '/',
-    redirect: '/wansoo/polls',
+    redirect: '/pollapp/polls',
   },
   {
     path: '*',
     component: () => import('@/views/NotFound.vue'),
   },
   poll,
+  vote,
 ];
 
 const router = new VueRouter({

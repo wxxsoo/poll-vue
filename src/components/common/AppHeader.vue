@@ -1,6 +1,6 @@
 <template>
   <a-layout-header>
-    <h2>투표 관리</h2>
+    <h2>투표하기</h2>
   </a-layout-header>
 </template>
 
