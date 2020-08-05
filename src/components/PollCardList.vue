@@ -1,6 +1,6 @@
 <template>
   <div>
-    <a-row :gutter="16" :style="{ padding: '12px' }">
+    <a-row :gutter="[16, 16]" :style="{ padding: '12px' }">
       <a-col :span="24">
         <a-button
           type="dashed"
@@ -10,7 +10,7 @@
         >
       </a-col>
     </a-row>
-    <a-row :gutter="16">
+    <a-row :gutter="[16, 16]">
       <a-col :span="8" v-for="poll in polls" :key="poll.pollId">
         <a-card hoverable>
           <a-card-meta
