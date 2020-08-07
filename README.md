@@ -1,5 +1,8 @@
 # poll-vue
 
+## Preview
+https://nostalgic-mccarthy-cd1f38.netlify.app/pollapp/polls
+
 ## Project setup
 ```
 npm install
