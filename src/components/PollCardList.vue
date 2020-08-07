@@ -11,7 +11,12 @@
       </a-col>
     </a-row>
     <a-row :gutter="[16, 16]">
-      <a-col :span="8" v-for="poll in polls" :key="poll.pollId">
+      <a-col
+        :xs="{ span: 24 }"
+        :lg="{ span: 8 }"
+        v-for="poll in polls"
+        :key="poll.pollId"
+      >
         <a-card hoverable>
           <a-card-meta
             :title="poll.question"
