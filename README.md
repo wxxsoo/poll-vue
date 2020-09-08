@@ -2,6 +2,7 @@
 
 ## Preview
 https://nostalgic-mccarthy-cd1f38.netlify.app/pollapp/polls
+무료 배포 서비스를 사용해서 조금 느려요!
 
 ## Project setup
 ```
